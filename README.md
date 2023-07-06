@@ -149,7 +149,7 @@ https://rr2023.sciencesconf.org/page/tutoriels
 
 * [La reproductibilité avec R, ou pourquoi celle-ci est située sur un continuum](https://649017259ea33242fbd1a328--courageous-cajeta-2542d9.netlify.app/#/title-slide) - Bruno André Rodrigues Coelho, Ministère de l'enseignement supérieur et de la recherche	
 * [Faire un package R documenté, testé, versionné et intégré en quelques minutes ? Challenge accepted !](Presentations/3_Vendredi/3b_Workflow/2_faire-un-package_rr2023_florence-mounier/2023-06-23_RR2023_slides_florence.html) - Florence Mounier, ThinkR	
-* [{lozen}, le thermomix de vos projets de développement R](ymansiaux.github.io/rencontresR2023) - YOHANN MANSIAUX, ThinkR
+* [{lozen}, le thermomix de vos projets de développement R](https://ymansiaux.github.io/rencontresR2023) - YOHANN MANSIAUX, ThinkR
 
 ## Les comités
 
