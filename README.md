@@ -103,7 +103,7 @@ https://rr2023.sciencesconf.org/page/tutoriels
 ### Eduction/Enseignement
 
 * [Initier 2400 personnes à R par enchantement : une histoire de licornes, potion et génie...logiciel](Presentations/1_Mercredi/6a_Education_Enseignement_I/1_murielledelmotte_RR2023.html) - Murielle Delmotte, ThinkR	
-* Diffuser la culture de la reproductibilité par une formation aux bonnes pratiques: de la qualité d'un projet aux pipelines de données - Lino Galiana, INSEE	
+* [Diffuser la culture de la reproductibilité par une formation aux bonnes pratiques: de la qualité d'un projet aux pipelines de données](https://linogaliana.github.io/prez-rr2023-avignon/#/title-slide) - Lino Galiana, INSEE	
 * [Où trouver de l'aide quand on apprend R ?](Presentations/1_Mercredi/6a_Education_Enseignement_I/presentation_rencontres_r_marie_vaugoyeau.pdf) - Marie Vaugoyeau, MStats
 * [Rzine : pour la diffusion et le partage de ressources sur la pratique de R en SHS](https://rzine.gitpages.huma-num.fr/communications/rr2023/#/title-slide) - Hugues Pecout, CNRS
 * [Application {shiny} de correction de projets individuels utilisant R, RStudio, GitHub](Presentations/2_Jeudi/6b_Education_Enseignement_II/2_RRavignon2023_engels_presentation.pdf) - Guyliann Engels, Service d'écologie numérique, Institut Complexys & Infortech, Université de Mons
