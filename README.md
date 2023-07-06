@@ -64,7 +64,7 @@ https://rr2023.sciencesconf.org/page/tutoriels
 * [Développement d'une base de données hydro-climatiques nationale à l'aide de R](Posters/BDD-Hydroclim_poster_Rencontres-R-2023.pdf) - Guilherme Mendoza Guimarães, Hydrosystèmes continentaux anthropisés : ressources, risques, restauration
 * [IDEATools : Un package R pour évaluer la durabilité des exploitations agricoles avec la méthode IDEA4](Posters/poster_IDEATools.pdf) - David Carayon, INRAE Nlle Aquitaine-Bordeaux / UR ETTIS
 *  RFLOMICS: Interactive web application for multi-omics data analysis - Audrey Hulot, Institut Jean-Pierre Bourgin - Delphine CHARIF, Institut Jean-Pierre Bourgin
-*  Russ a 10 ans ... - Bénédicte Garnier, Institut national d'études démographiques
+* [Russ a 10 ans ...](Posters/Poster_RUSS_2023.pdf) - [Flyers](Posters/Flyer_RUSS_2023.pdf) - Bénédicte Garnier, Institut national d'études démographiques
 *  Analyse de réseaux trophiques : comparaison d'algorithmes pour l'échantillonage uniforme de polytope - Théo Grente, Laboratoire de Mathématiques Nicolas Oresme, France Energies Marines [Brest]
 *  L'analyse de survie, une « nouvelle » méthode pour modéliser les dynamiques temporelles du dépérissement de la vigne - Inchboard Lauren, Bordeaux Sciences Agro [Gradignan]
 * [Le futur c'est SAS ! Euh. . . non, Sass !](Posters/poster_breant_sass.pdf) - Arthur Bréant, ThinkR
@@ -120,7 +120,7 @@ https://rr2023.sciencesconf.org/page/tutoriels
 
 ### Reporting
 
-* [Se démarquer avec les thèmes HTML Quarto.](https://cderv.github.io/rr-2023-quarto-html-theming/#/title-slide) - christophe dervieux, Posit
+* [Se démarquer avec les thèmes HTML Quarto.](https://cderv.github.io/rr-2023-quarto-html-theming/) - Christophe Dervieux, Posit
 * [Computo: An academic journal promoting reproductibility via Quarto and Continuous Integration](Presentations/1_Mercredi/6b_Reporting/2_COMPUTO_Chiquet.htm) - Julien Chiquet, Mathématiques et Informatique Appliquées
 * [Synthèse hebdomadaire de la consommation d'électricité française](Presentations/1_Mercredi/6b_Reporting/3_CADORET_3_RTE_SyntheseHebdo_RR2023.pdf) - Valentin Cadoret, Réseau de Transport d'Electricité [Paris] - Victor PERRIER, dreamRs
 
