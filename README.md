@@ -64,7 +64,7 @@ https://rr2023.sciencesconf.org/page/tutoriels
 * [Développement d'une base de données hydro-climatiques nationale à l'aide de R](Posters/BDD-Hydroclim_poster_Rencontres-R-2023.pdf) - Guilherme Mendoza Guimarães, Hydrosystèmes continentaux anthropisés : ressources, risques, restauration
 * [IDEATools : Un package R pour évaluer la durabilité des exploitations agricoles avec la méthode IDEA4](Posters/poster_IDEATools.pdf) - David Carayon, INRAE Nlle Aquitaine-Bordeaux / UR ETTIS
 *  RFLOMICS: Interactive web application for multi-omics data analysis - Audrey Hulot, Institut Jean-Pierre Bourgin - Delphine CHARIF, Institut Jean-Pierre Bourgin
-* [Russ a 10 ans ...](Posters/Poster_RUSS_2023.pdf) - [Flyers](Posters/Flyer_RUSS_2023.pdf) - Bénédicte Garnier, Institut national d'études démographiques
+* [Le sémiaire Russ a 10 ans](Posters/Poster_RUSS_2023.pdf) - [Flyers](Posters/Flyer_RUSS_2023.pdf) - Pascal Cristofoli (EHESS), Bénédicte Garnier (Ined), Timothée Giraud (CNRS UAR Riate), Élisabeth Morand (Ined)  
 *  Analyse de réseaux trophiques : comparaison d'algorithmes pour l'échantillonage uniforme de polytope - Théo Grente, Laboratoire de Mathématiques Nicolas Oresme, France Energies Marines [Brest]
 *  L'analyse de survie, une « nouvelle » méthode pour modéliser les dynamiques temporelles du dépérissement de la vigne - Inchboard Lauren, Bordeaux Sciences Agro [Gradignan]
 * [Le futur c'est SAS ! Euh. . . non, Sass !](Posters/poster_breant_sass.pdf) - Arthur Bréant, ThinkR
