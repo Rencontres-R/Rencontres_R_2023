@@ -1,0 +1,19 @@
+title: ThinkR default theme
+author: ThinkR
+version: 1.2.1
+quarto-required: ">=1.2.0"
+contributes:
+  formats:
+    revealjs:
+      slideNumber: true
+      theme: [default, custom.scss]
+      logo: thinkr_logo.png
+      footer: |
+        **<i class="las la-book"></i> {{< meta footer-txt >}}** |
+        Retrouvez nous sur <https://thinkr.fr>
+      title-slide-attributes:
+        data-background-image: font.png
+      # include-before-body:
+      #   - line-awesome.html
+      code-annotations: hover
+      chalkboard: true

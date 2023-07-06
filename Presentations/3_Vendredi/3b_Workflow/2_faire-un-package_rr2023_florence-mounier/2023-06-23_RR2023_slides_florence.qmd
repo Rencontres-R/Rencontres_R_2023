@@ -1,0 +1,289 @@
+---
+title: "Faire un package R <br> <small>documenté, testé, versionné et intégré </small> <br> en quelques minutes ?"
+subtitle: "Challenge accepted !"
+footer-txt: "Faire un package R en quelques minutes !"
+format:
+  thinkridentity-revealjs: default
+author: Florence Mounier, ThinkR
+institute: Rencontres R 2023
+chalkboard: false
+---
+
+# Vous avez aimé l'original ?
+
+```{r}
+knitr::include_graphics("images/Rpackage.png")
+```
+
+# Vous allez adorer le volume 2 !
+
+<br>
+
+![](images/borat-2-1200x630-meme.jpg){width="800" height="400"}
+
+# Pourquoi FAIRE vos propres packages ?
+
+## Plus jamais ça...
+
+:::: {.columns}
+
+::: {.column width="70%"}
+> **"Elle s'utilise comment cette fonction déjà !?"**
+
+> **"J'ai déjà codé une fonction qui ressemble à ça quelque part... mais où !?"**
+
+>  **"Mais pourtant ça marchait la dernière fois !"**
+
+>  **"Voilà mon script, par contre les commentaires sont assez vagues."**
+:::
+
+::: {.column width="30%"}
+
+![](images/youve-suffered-enough.jpg){width="250" height="300"}
+
+:::
+
+::::
+
+. . .
+
+<br>
+
+**Objectifs : Réutilisation - Reproductibilité / Fiabilité - Partage**
+
+::: {.small .footer}
+*Mention légale : Toute ressemblance avec des personnes existantes ou ayant existé serait purement fortuite*
+:::
+
+# Pourquoi NE PAS faire des packages ?
+
+## Peut-être parce que vous avez déjà entendu...
+
+>  **"C'est trop compliqué."**
+
+>  **"J'ai trop peu de fonctions pour en faire un package."**
+
+>  **"Ca me prendrait trop de temps !"**
+
+. . . 
+
+![](images/fake.jpg){.absolute top="100" right="90" width="270" height="180"}
+
+<br>
+<br>
+
+::: {.my_title .center-items}
+Oui mais ça, c'était avant !
+:::
+
+# Faire un package en 2023
+
+> "Un copier-coller `r r2symbols::symbol("arrow-right")` une fonction `r r2symbols::symbol("arrow-right")` un package" (S.R.)
+
+## Un package, c'est quoi ?
+
+. . .
+
+::: {.my_title}
+Contenu
+:::
+
+::: incremental
+-   Code ou fichier source
+-   Documentation (page d'aide et vignette d'utilisation)
+-   Tests unitaires
+:::
+
+. . .
+
+::: {.my_title}
+Contenant
+:::
+
+::: incremental
+-   description générale du package, développeur, licence...
+-   consignes d'installation, utilisation, voire contribution aux développements
+-   fonctions disponibles pour l'utilisateur et dépendances à d'autres packages
+:::
+
+. . .
+
+::: {.my_title}
+Le tout est bien rangé dans une arborescence de dossiers standardisée.
+:::
+
+![](images/shocked-4625235_1280.webp){.absolute .fragment top="100" right="90" width="300" height="300"}
+
+::: notes
+Pas de panique !
+
+Grâce aux outils que je vais vous présenter vous n'aurez pas forcément à vous soucier de tout ça !
+
+Mais vous pourrez quand même tirer profit de sa structure pour utiliser, modifier et partager facilement votre travail.
+:::
+
+## Comment CRÉER et PARTAGER des packages facilement ?
+
+<br>
+
+### Avec {fusen} et la méthode Rmd first
+
+<br>
+
+::: incremental
+-  Notre job : fonctions, documentation et tests au même endroit
+-  Le job de {fusen} :
+    - "gonfler" le package
+    - mettre en place de quoi "checker" et partager sur GitHub
+:::
+
+![](images/logo-fusen.png){.absolute top="100" right="100" width="150" height="150"}
+
+
+::: notes
+Montrer la feuille plate et le fusen.
+:::
+
+## C'est parti pour la démo !
+
+<br>
+
+**Une fonction simple : transformer des noms de colonnes en snake case**
+
+```{r, echo=TRUE, eval=FALSE}
+clean_titles <- function(data){
+    names(data) <- names(data) %>% 
+      # enlever espaces début, fin ou répétés
+      str_squish() %>% 
+      # minuscules
+      str_to_lower() %>% 
+      # remplacer les ponctuations par des underscores
+      str_replace_all(pattern = "[:punct:]|[:space:]", replacement = "_")
+    return(data)
+}
+```
+
+
+## 1. Créer un projet RStudio "Package avec {fusen}"
+
+{{< video videos/01-creation-projet-package-fusen-cut.mp4 >}}
+
+::: notes
+Live coding :
+
+-   RStudio \> New Project \> New Directory \> Package using {fusen}
+-   Choisir un chemin pour la sauvegarde et un nom de package explicite, minuscules, sans caractères spéciaux ni underscores
+-   Choisir le template {fusen} : minimal
+-   Cliquer sur "Create" et attendre que RStudio switch vers ce nouveau projet
+
+Commentaire oral :
+
+Le projet créé contient un dossier `dev/` contenant : - un Rmd de développement du package avec des commandes pour vous guider dans la création des éléments de squelette de package les plus courants - un Rmd "flat" où fonctions, documentation, exemples et tests seront intégrés
+:::
+
+## 2. Créer les fichiers DESCRIPTION et LICENSE
+
+{{< video videos/02-description-et-license-pkg-cut.mp4 >}}
+
+::: notes
+Live coding :
+
+Dans le chunk `description` de `0-dev_history.Rmd` remplir les champs : - Title : "Demo RR 2023" (premières lettres en majuscules) - Description : "Démonstration de création de package R documenté, testé, versionné et intégré en quelques minutes ? Challenge accepted !" - Auteur : Prenom, Nom, email - License : Prenom Nom - Lancer le chunk - Montrer le contenu des 3 fichiers créés
+
+Commentaire oral :
+
+On indique un titre, une description et au moins un auteur / porteur de licence pour le package.
+On lance ensuite le chunk et ça crée les fichiers de description et de license avec les contenus ad hoc
+:::
+
+## 3. S'approprier le template du fichier "flat"
+
+{{< video videos/03-flat-appropriation-template-cut.mp4 >}}
+
+::: notes
+Live coding :
+
+-   Changer le titre de la vignette dans le yaml "Nettoyage données"
+-   Supprimer le commentaire de lancement du chunk description
+-   Supprimer le template de fonction (3 chunks)
+-   Dans la fonction inflate() modifier le titre de la vignette et le nom du flat "flat_nettoyage.Rmd"
+-   Renomer le fichier "flat_minimal.Rmd" en "flat_nettoyage.Rmd" dans l'explorateur de fichier
+:::
+
+## 4. Créer sa première fonction dans le fichier "flat"
+
+{{< video videos/04-flat-chunk-creation-function-example-test-vignette-cut-slow.mp4 >}}
+
+::: notes
+Live coding :
+
+-   Utiliser l'Addins "Add {fusen} chunk" pour créer un template de chunks d'une fonction "clean_titles" qui sera exportée
+-   Coller le code de la fonction dans le chunk "function"
+-   roxygen titre, description, return
+-   Code \> Insert Roxygen Skeleton
+-   roxygen param, importFrom, examples
+-   chunk example
+-   Texte vignette "Etape 1 : ..."
+:::
+
+## 5. Gonfler le fichier "flat" pour peupler le package
+
+{{< video videos/05-inflate-explo-check-intall-knit-vignette-cut-slow.mp4 >}}
+
+## 6. Versionner et partager sur GitHub
+
+{{< video videos/06-share-github-cut-slow.mp4 >}}
+
+## 7. Etre fier·e de vous et profiter !
+
+<br>
+
+**5 min d'écriture + 7 min de pause café = 1 package + 1 fonction**
+
+<br>
+
+**Le tout documenté, testé, versionné et intégré**
+
+<br>
+
+![](images/yes.jpg){fig-align="center"}
+
+## 8. Améliorer, compléter, co-développer
+
+::: notes
+-   Peaufiner votre README si vous voulez partager et co-développer
+-   Ajouter des tests unitaires pour sécuriser un maximum de cas d'usage de votre fonction
+-   Ajouter d'autres fonctions, d'autres vignettes
+-   Ajouter des données d'exemple
+-   ...
+:::
+
+<br>
+
+. . .
+
+**{fusen} sera toujours là pour vous épauler !**
+
+<br>
+
+. . .
+
+1.  Modifier votre fichier flat
+
+. . .
+
+2.  Redemander à {fusen} de gonfler votre package
+
+![](images/check-succeeded.png){.absolute .fragment top="150" right="70" width="380" height="160"}
+
+. . .
+
+3.  Pousser vos modifications sur GitHub
+
+`r r2symbols::symbol("arrow-right")` *checks* sur différentes OS <br> `r r2symbols::symbol("arrow-right")` *site web* du package mis à jour
+
+# Convaincu·e ?
+
+**Alors à vos claviers ! Et si vous avez des questions vous savez où nous trouver !**
+
+![](images/team_thinkr_r_developpeur-2048x787.webp)

@@ -1,0 +1,158 @@
+---
+title: Comment bien rater votre forge logicielle R ? 
+subtitle: "Les Rencontres R - 21 juin 2023"
+format:
+  thinkridentity-revealjs: 
+    transition: 'fade'
+    transition-speed: 'fast'
+embed-resources: true  
+chalkboard: false  
+author: Vincent Guyader
+---
+
+## Who am I?
+
+Vincent Guyader, ThinkR 
+
+> "Rendre autonome et performant les utilisateurs de R"
+
+::: {.incremental .center}
+- Formation 
+- Développement
+- Infrastructure
+:::
+
+![](images/team_thinkr_r_developpeur-2048x787.webp){ fig-align="center" width=100%}
+
+
+
+## On va parler infra
+
+. . .
+
+![](images/geek.jpg){ fig-align="center" }
+
+
+
+
+
+## Atrocité et bienveillance
+
+. . .
+
+![](images/coeur.jpeg){ fig-align="center" }
+
+
+
+
+## Atrocité et bienveillance
+
+![](images/gerer-les-conflits-au-travail.jpg){ fig-align="center" }
+
+
+# Méthode 1 :
+
+# Méthode 1 : s'assurer que personne ne peut y accéder
+
+## Ne pas recetter
+
+. . .
+
+![](images/voiture_.png){ fig-align="center" }
+
+
+
+---
+
+## Trop isoler l'infra
+
+. . .
+
+
+![](images/infra_1.png){.fragment .absolute top=50}
+![](images/infra_2.png){.fragment .absolute top=50}
+![](images/infra_3.png){.fragment .absolute top=50}
+
+
+
+
+# Méthode 2 :
+
+# Méthode 2 : Ne pas distinguer prod et recette
+
+## Le principe
+
+. . .
+
+![](images/archi_projet.png){ fig-align="center" width=100%}
+
+
+## Une machine non supervisée
+
+. . .
+
+![](images/isole.png){ fig-align="center" width=50%}
+
+
+# Méthode 3 :
+
+# Méthode 3 : Ne pas prévoir et gérer les montées de version
+
+## Utiliser des versions obsolètes
+
+. . .
+
+![](images/arya.jpg){ fig-align="center" width=100%}
+
+
+
+# Méthode 4 :
+
+# Méthode 4 : Mal gérer les packages
+
+## Interdire l'installation de package
+
+. . .
+
+![](images/cuillere.webp){ fig-align="center" width=100%}
+
+
+
+
+## Ne pas mettre en place de règles
+
+. . .
+
+![](images/bibli.jpg){ fig-align="center" width=100%}
+
+
+# En résumé
+
+## En résumé
+
+::: {.incremental .center}
+- Une machine difficile d'accès 
+- avec une latence réseau énorme, 
+- et personne de compétent pour s'en occuper, 
+- qui fait tourner une version obsolète de R, 
+- avec des packages mal gérés ou absents
+:::
+
+
+
+
+
+
+## Des solutions existent
+
+
+
+. . .
+
+il existe un monde où..
+
+. . .
+
+![](images/ensemble.jpg){ fig-align="center" width=75%} 
+
+# Merci, des remarques ?

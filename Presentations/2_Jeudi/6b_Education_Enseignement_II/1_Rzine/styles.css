@@ -1,0 +1,618 @@
+
+.reveal .slides .title { 
+  font-size: 180%; 
+
+}
+
+.reveal .slides .place { 
+     text-transform : none;
+     font-size: 80%; 
+     margin-top:0px;
+
+}
+
+.reveal .slides .place2 { 
+     text-transform : none;
+     font-size: 65%; 
+     color: #4178bc;
+     margin-top:0px;
+     margin-bottom:0px;
+
+}
+
+.reveal .slides .author { 
+  font-size: 70%; 
+}
+
+
+.reveal .slides .mail { 
+  font-size: 65%; 
+      color: blue; 
+}
+
+
+.reveal .slides .name { 
+  font-size: 52%; 
+      color: white; 
+      margin-bottom: 15px;
+}
+
+.reveal .slides .first { 
+  font-size: 180%; 
+  color: #4178bc; 
+  margin-bottom:0px;
+}
+
+.reveal .slides h2 { 
+  font-size: 120%; 
+  text-transform : none;
+  
+}
+
+.reveal .slides h3 {
+   font-size: 100%;
+   text-transform : none;
+   }
+   
+   
+.reveal .slides h4 {
+   font-size: 80%;
+   text-transform : none;
+   margin-top:20px;
+   }
+   
+
+p,ul,li,td {
+    color: white; 
+   font-size: 70%;
+ }
+ 
+
+.reveal .slides .pucsmall0 {
+	font-size: 0.9em;
+}
+
+.reveal .slides .pucsmall {
+	font-size: 0.8em;
+}
+
+.reveal .slides .pucsmall2 {
+	font-size: 0.7em;
+}
+
+.reveal .slides .pucsmall3 {
+  	margin-top: 50px;
+	font-size: 0.8em;
+}
+
+
+.reveal .slides .xpucsmall {
+	font-size: 0.6em;
+}
+
+.reveal .slides .xpucsmall3 {
+  text-align: left;
+	font-size: 0.6em;
+}
+
+
+
+.reveal .slides .xxpucsmall {
+	font-size: 0.5em;
+}
+
+
+.reveal .slides .smallp {
+  text-align: left;
+	font-size: 0.7em;
+}
+
+.reveal .slides .legend_333 {
+    margin-top: -30px;
+  margin-bottom: 35px;
+  text-align: center;
+	font-size: 0.55em;
+	color: #cccccc;
+}
+
+
+.reveal .slides .legend33 {
+  margin-top: 65px;
+    margin-bottom: 50px;
+  text-align: center;
+	font-size: 0.55em;
+	color: #cccccc; 
+}
+
+.reveal .slides .legend333 {
+  margin-top: 40px;
+    margin-bottom: 35px;
+  text-align: center;
+	font-size: 0.45em;
+	color: #cccccc; 
+}
+
+
+.reveal .slides .legend3 {
+  margin-top: -25px;
+  text-align: center;
+	font-size: 0.6em;
+}
+
+
+.reveal .slides .legend {
+  margin-top: -30px;
+  text-align: center;
+	font-size: 0.5em;
+}
+
+
+.reveal .slides .legend2 {
+  margin-top: -20px;
+  text-align: center;
+	font-size: 0.5em;
+}
+
+.reveal .slides .legend4 {
+  margin-top: -10px;
+  text-align: center;
+	font-size: 0.45em;
+	color: #cccccc; 
+}
+
+.reveal .slides .legend44 {
+  margin-top: -14px;
+  text-align: center;
+	font-size: 0.45em;
+	color: #cccccc; 
+}
+
+.reveal .slides .legend444 {
+  margin-top: -20px;
+  text-align: left;
+	font-size: 0.38em;
+	color: #cccccc; 
+}
+
+.reveal .slides .legend_444 {
+  margin-top: -18px;
+  text-align: left;
+	font-size: 0.40em;
+	color: #cccccc; 
+}
+
+.reveal .slides .smallpcenter {
+  text-align: center;
+	font-size: 0.7em;
+}
+
+.reveal .slides .medpcenter {
+  text-align: center;
+	font-size: 0.8em;
+}
+
+
+.reveal .slides .smallpcenter1 {
+  text-align: left;
+  margin-top:-20px;
+  margin-bottom: 30px;
+	font-size: 0.5em;
+}
+
+.reveal .slides .smallpcenter11 {
+  text-align: left;
+  margin-top:40px;
+  margin-bottom: 30px;
+	font-size: 0.5em;
+}
+
+.reveal .slides .smallpcenter2 {
+  text-align: center;
+	font-size: 0.6em;
+}
+
+.reveal .slides .smallpcenter3 {
+  text-align: center;
+	font-size: 0.5em;
+	margin-top: 75px;
+}
+
+.reveal .slides .smallpcenter4 {
+  text-align: center;
+	font-size: 0.7em;
+	margin-top: 75px;
+}
+
+
+.reveal .slides .xsmallp {
+	font-size: 0.5em;
+}
+
+.reveal .slides .xsmallpbis {
+  	margin-top: 60px;
+    text-align: right;
+	font-size: 0.5em;
+}
+
+.reveal .slides .smallbluep {
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom:-25px;
+	font-size: 0.7em;
+	color: #6f9cd1; 
+}
+
+
+.reveal .slides .moyp {
+		font-size: 0.8em;
+}
+
+.reveal .slides .moyp3 {
+      padding: 30px 0 0 0;
+		font-size: 0.9em;
+}
+
+.reveal .slides .moyp4 {
+      padding: 60px 0 0 0;
+		font-size: 1.2em;
+}
+
+
+.reveal .slides .moyp2 {
+    padding: 15px 0 0 0;
+		font-size: 0.8em;
+}
+
+.reveal .slides .moyp2_2 {
+		margin-bottom: 20px;
+		margin-top: 50px;
+		font-size: 0.8em;
+}
+
+.reveal .slides .moyp222 {
+    padding: 15px 0 0 0;
+		font-size: 0.7em;
+}
+
+
+.reveal .slides .moyp22_2 {
+    padding: 15px 0 0 0;
+		font-size: 0.7em;
+		margin-bottom: 40px;
+}
+
+
+.reveal .slides .moyp22 {
+    padding: 30px 0 0 0;
+		font-size: 0.8em;
+		text-align: center;
+}
+
+.reveal .slides .moyp2222 {
+    padding: 30px 0 0 0;
+		font-size: 0.6em;
+		text-align: center;
+}
+
+
+.reveal .slides .moype {
+    padding: 30px 0 0 0;
+		font-size: 0.7em;
+		text-align: center;
+}
+
+.reveal .slides .nrmp {
+		font-size: 0.9em;
+}
+
+.reveal .slides .nrmp1 {
+		font-size: 3em;
+		color: #6f9cd1;
+}
+
+.reveal .slides .nrmp4 {
+		font-size: 1.7em;
+				color: #ffffff;
+				font-weight: bold;
+}
+
+
+.reveal .slides .nrmp2 {
+		font-size: 2.4em;
+		color: #6f9cd1;
+}
+
+#left0 {
+  left:-8.33%;
+  text-align: center;
+  padding: 20px 0;
+  float: left;
+  width:45%;
+}
+
+#left00 {
+  left:-8.33%;
+  float: left;
+  width:42%;
+}
+
+#leftp {
+  text-align: left;
+  float: left;
+  width:49%;
+}
+
+#centerp {
+  text-align: center;
+  float: left;
+  width:100%;
+}
+
+
+
+#leftppp {
+  text-align: left;
+ float: right;
+  width:90%;
+}
+
+#leftpetit {
+  text-align: left;
+  float: left;
+  width:23%;
+}
+
+#rightp {
+  text-align: left;
+  float: right;
+  width:49%;
+}
+
+
+#leftpp {
+  text-align: left;
+  float: left;
+  width:32.5%;
+}
+
+
+
+#leftbg {
+  text-align: center;
+  float: left;
+  width:66%;
+}
+
+
+#rightbg {
+  float: right;
+  width:34%;
+}
+
+
+#left {
+  left:-8.33%;
+  text-align: center;
+  padding: 20px 0;
+  float: left;
+  width:47%;
+}
+
+#right {
+  left:31.25%;
+  float: right;
+  padding: 20px 0;
+  text-align: center;
+  width:47%;
+}
+
+#right0 {
+  left:31.25%;
+  float: right;
+  padding: 20px 0;
+  text-align: center;
+  width:55%;
+}
+
+#right00 {
+  left:31.25%;
+  float: right;
+  width:58%;
+}
+
+
+#left3 {
+  text-align: center;
+  padding: 20px 0;
+  float: left;
+  width:20%;
+}
+
+#left4 {
+  text-align: center;
+  padding: 0px 0;
+  float: left;
+  width:35%;
+}
+
+#righ4 {
+  text-align: left;
+  float: right;
+  width:65%;
+}
+
+
+
+#right33 {
+  text-align: left;
+  padding: 0px 0;
+  float: right;
+  width:77%;
+}
+
+#center2 {
+  float: left;
+  padding: 75px 0;
+  text-align: center;
+  width:20%;
+}
+
+#center3 {
+  float: left;
+  padding: 40px 0;
+  text-align: center;
+  width:25%;
+}
+
+#left2 {
+  float: left;
+  padding: 40px 0 ;
+  width:33%;
+  text-align: center;
+}
+
+
+#leftter {
+  float: left;
+  padding: 50px 0 ;
+  width:33%;
+  text-align: center;
+}
+
+
+
+#centerter {
+  float: left;
+  padding: 55px 0 ;
+  width:33%;
+  text-align: center;
+}
+
+#rightter {
+  float: right;
+  padding: 50px 0 ;
+  width:33%;
+  text-align: center;
+}
+
+#right_4 {
+display: inline;
+text-align: center;
+}
+
+#left_4 {
+display: inline;
+text-align: center;
+}
+
+#vide {
+  width:100%;
+  height: 15px;
+  text-align: center;
+}
+
+
+#vide2 {
+  width:30%;
+  height: 10px;
+}
+
+#vide3 {
+  width:30%;
+  height: 40px;
+}
+
+#vide4 {
+  width:30%;
+  height: 25px;
+}
+
+
+#left_2 {
+
+  padding: 50px 0 ;
+  margin-left: 40px;
+  float: left;
+  width:30%;
+}
+
+#center22 {
+  float: left;
+  padding: 100px 0;
+  text-align: center;
+  width:20%;
+}
+#right2 {
+  float: right;
+  padding: 0 0;
+  text-align: center;
+  width:45%;
+}
+
+#right3 {
+  float: left;
+  padding: 50px 0;
+  text-align: center;
+  width:30%;
+}
+
+
+#codermd {
+  float: left;
+  width:49%;
+}
+
+#codehtml {
+  float: right;
+  width:49%;
+}
+
+
+.reveal .slides .R {
+  padding: 20px 20px;
+}
+
+
+.reveal section img { 
+    background: rgba(0, 0, 0, 0); 
+    border: 0px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15) 
+}
+
+
+
+.reveal pre code {
+    display: block;
+    padding: 5px;
+    overflow: auto;
+    max-height: 430px;
+    word-wrap: normal;
+    font-size:0.6em;
+    background-color: #282828;
+    color: #DCDCDC;
+}
+
+.reveal pre {
+	display: block;
+	position: relative;
+	width: 99%;
+	margin: 0px;
+	text-align: left;
+	font-size: 0.55em;
+	font-family: $codeFont;
+	line-height: 1em;
+	word-wrap: break-word;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.reveal code {
+	font-family: $codeFont;
+	text-transform: none;
+	
+}
+
+.reveal .slides .litito { 
+  font-size: 75%; 
+  margin-top: 40px;
+  margin-bottom: 20px;
+}

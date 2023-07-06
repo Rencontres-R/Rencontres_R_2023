@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html class=""><head>
+<!-- base href="https://davidgohel.shinyapps.io/municipales-paris/_w_f6f1a5d7/" -->
+    <script type="text/javascript">
+(function() {
+  var workerId = '_w_f6f1a5d7';
+  // remove base href if worker ID is in url
+  if (window.location.href.indexOf(workerId) > 0) {
+    document.querySelector('base').removeAttribute('href');
+  }
+})();
+</script>
+
+      <script type="text/javascript">
+      var __connect = {
+        shinyPre101: false
+      }
+      </script>
+      
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="application/shiny-singletons"></script>
+  <script type="application/html-dependencies">jquery[3.6.0];shiny-css[1.7.4];shiny-javascript[1.7.4];shinyWidgets[0.7.6];ionrangeslider-javascript[2.3.1];strftime[0.9.2];ionrangeslider-css[2.3.1];htmlwidgets[1.6.2];d3-bundle[5.16.0];d3-lasso[0.0.5];save-svg-as-png[1.4.17];flatbush[4.0.0];ggiraphjs[0.4.6];girafe-binding[0.8.7];bootstrap[3.4.1]</script>
+<script src="a_data_002/jquery.min.js"></script>
+<link href="a_data_002/shiny.min.css" rel="stylesheet">
+<script src="a_data_002/shiny.min.js"></script>
+<link href="a_data_002/shinyWidgets.min.css" rel="stylesheet">
+<script src="a_data_002/shinyWidgets-bindings.min.js"></script>
+<script src="a_data_002/ion.rangeSlider.min.js"></script>
+<script src="a_data_002/strftime-min.js"></script>
+<link href="a_data_002/ion.rangeSlider.css" rel="stylesheet">
+<script src="a_data_002/htmlwidgets.js"></script>
+<script src="a_data_002/d3-bundle.min.js"></script>
+<script src="a_data_002/d3-lasso.min.js"></script>
+<script src="a_data_002/save-svg-as-png.min.js"></script>
+<script src="a_data_002/flatbush.min.js"></script>
+<link href="a_data_002/ggiraphjs.min.css" rel="stylesheet">
+<script src="a_data_002/ggiraphjs.min.js"></script>
+<script src="a_data_002/girafe.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="a_data_002/bootstrap.min.css" rel="stylesheet">
+<link href="a_data_002/bootstrap-accessibility.min.css" rel="stylesheet">
+<script src="a_data_002/bootstrap.min.js"></script>
+<script src="a_data_002/bootstrap-accessibility.min.js"></script>
+<script src="a_data_002/sockjs.min.js"></script>
+<script src="a_data_002/shiny-server-client.min.js"></script>
+<script>preShinyInit({reconnect:true,reconnectTimeout:15000,disableProtocols:["htmlfile","xdr-streaming","xdr-polling","websocket"],token:true,workerId:true,subappTag:true,extendSession:true,fixupInternalLinks:true});</script>
+<link rel="stylesheet" type="text/css" href="a_data_002/rstudio-connect.css">
+<link rel="stylesheet" type="text/css" href="a_data_002/shinyapps.css"></head>
+<body>
+<script type="text/javascript" src="a_data_002/iframeResizer.contentWindow.min.js"></script>
+<script type="text/javascript" src="a_data_002/shinyapps.frame.content.js"></script>
+<script type="text/javascript" src="a_data_002/shinyapps.js"></script>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group shiny-input-container shiny-input-radiogroup shiny-input-container-inline">
+          <label id="tour-label" class="control-label" for="tour">Choose Tour 1 or Tour 2:</label>
+          <br>
+          <div id="tour" class="radio-group-buttons shiny-bound-input">
+            <div aria-labelledby="tour-label" class="btn-group btn-group-container-sw" data-toggle="buttons" role="group">
+              <div class="btn-group btn-group-toggle" role="group">
+                <button class="btn radiobtn btn-default active">
+                  <input type="radio" autocomplete="off" name="tour" value="Tour 1" checked="checked">
+                  Tour 1
+                </button>
+              </div>
+              <div class="btn-group btn-group-toggle" role="group">
+                <button class="btn radiobtn btn-default">
+                  <input type="radio" autocomplete="off" name="tour" value="Tour 2">
+                  Tour 2
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group shiny-input-container">
+          <label class="control-label" id="gradient-label" for="gradient">gradient max for the map</label>
+          <span class="irs irs--shiny js-irs-0 irs-with-grid"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min">0.15</span><span class="irs-max">1</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single">0</span></span><span class="irs-grid"><span class="irs-grid-pol" style="left: 0%"></span><span class="irs-grid-text js-grid-text-0" style="left: 0%">0.15</span><span class="irs-grid-pol small" style="left: 7.058823529411768%"></span><span class="irs-grid-pol small" style="left: 3.529411764705884%"></span><span class="irs-grid-pol" style="left: 10.588235294117652%"></span><span class="irs-grid-text js-grid-text-1" style="left: 10.5882%; visibility: hidden;">0.24</span><span class="irs-grid-pol small" style="left: 17.64705882352942%"></span><span class="irs-grid-pol small" style="left: 14.117647058823536%"></span><span class="irs-grid-pol" style="left: 21.176470588235304%"></span><span class="irs-grid-text js-grid-text-2" style="left: 21.1765%; visibility: hidden;">0.33</span><span class="irs-grid-pol small" style="left: 28.235294117647072%"></span><span class="irs-grid-pol small" style="left: 24.705882352941188%"></span><span class="irs-grid-pol" style="left: 31.764705882352956%"></span><span class="irs-grid-text js-grid-text-3" style="left: 31.7647%; visibility: hidden;">0.42</span><span class="irs-grid-pol small" style="left: 38.823529411764724%"></span><span class="irs-grid-pol small" style="left: 35.29411764705884%"></span><span class="irs-grid-pol" style="left: 42.35294117647061%"></span><span class="irs-grid-text js-grid-text-4" style="left: 42.35294117647061%">0.51</span><span class="irs-grid-pol small" style="left: 49.411764705882376%"></span><span class="irs-grid-pol small" style="left: 45.88235294117649%"></span><span class="irs-grid-pol" style="left: 52.94117647058826%"></span><span class="irs-grid-text js-grid-text-5" style="left: 52.9412%; visibility: hidden;">0.6</span><span class="irs-grid-pol small" style="left: 60.00000000000003%"></span><span class="irs-grid-pol small" style="left: 56.470588235294144%"></span><span class="irs-grid-pol" style="left: 63.52941176470591%"></span><span class="irs-grid-text js-grid-text-6" style="left: 63.5294%; visibility: hidden;">0.69</span><span class="irs-grid-pol small" style="left: 70.58823529411768%"></span><span class="irs-grid-pol small" style="left: 67.0588235294118%"></span><span class="irs-grid-pol" style="left: 74.11764705882356%"></span><span class="irs-grid-text js-grid-text-7" style="left: 74.1176%; visibility: hidden;">0.78</span><span class="irs-grid-pol small" style="left: 81.17647058823533%"></span><span class="irs-grid-pol small" style="left: 77.64705882352945%"></span><span class="irs-grid-pol" style="left: 84.70588235294122%"></span><span class="irs-grid-text js-grid-text-8" style="left: 84.70588235294122%">0.87</span><span class="irs-grid-pol small" style="left: 91.76470588235298%"></span><span class="irs-grid-pol small" style="left: 88.2352941176471%"></span><span class="irs-grid-pol" style="left: 95.29411764705887%"></span><span class="irs-grid-text js-grid-text-9" style="left: 95.2941%; visibility: hidden;">0.96</span><span class="irs-grid-pol small" style="left: 98.43137254901963%"></span><span class="irs-grid-pol small" style="left: 96.86274509803924%"></span><span class="irs-grid-pol" style="left: 100%"></span><span class="irs-grid-text js-grid-text-10" style="left: 100%; visibility: hidden;">1</span></span><span class="irs-bar irs-bar--single"></span><span class="irs-shadow shadow-single"></span><span class="irs-handle single"><i></i><i></i><i></i></span></span><input class="js-range-slider irs-hidden-input shiny-bound-input" id="gradient" data-skin="shiny" data-min="0.15" data-max="1" data-from="0.6" data-step="0.01" data-grid="true" data-grid-num="9.44444444444444" data-grid-snap="false" data-prettify-separator="," data-prettify-enabled="true" data-keyboard="true" data-data-type="number" tabindex="-1" readonly="readonly" value="0.6">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-7">
+        <div class="girafe html-widget html-widget-output shiny-report-size html-fill-item-overflow-hidden html-fill-item shiny-bound-output" id="summary" style="width: 100%; height: 500px; visibility: inherit;" aria-live="polite"><style type="text/css">.tooltip_svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538 { padding:5px;background:black;color:white;border-radius:2px 2px 2px 2px;text-align:left; ; position:absolute;pointer-events:none;z-index:999;}
+
+.select_data_svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538 { fill:red;stroke:gray; }
+.select_key_svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538 { stroke:black;stroke-width:3px; }
+.select_theme_svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538 { fill:red;stroke:black;cursor:pointer; }
+text.select_theme_svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538 { stroke:none;fill:red; }
+circle.select_theme_svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538 { fill:red;stroke:black; }
+line.select_theme_svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538, polyline.select_theme_svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538 { fill:none;stroke:red; }
+rect.select_theme_svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538, polygon.select_theme_svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538, path.select_theme_svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538 { fill:red;stroke:none; }
+image.select_theme_svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538 { stroke:red; }
+.hover_inv_svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538 { opacity:.3; }
+.hover_data_svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538 { stroke:black;cursor:pointer; }
+.hover_key_svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538 { cursor:pointer;stroke:black; }
+.hover_theme_svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538 { fill:orange;stroke:black;cursor:pointer; }
+text.hover_theme_svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538 { stroke:none;fill:orange; }
+circle.hover_theme_svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538 { fill:orange;stroke:black; }
+line.hover_theme_svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538, polyline.hover_theme_svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538 { fill:none;stroke:orange; }
+rect.hover_theme_svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538, polygon.hover_theme_svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538, path.hover_theme_svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538 { fill:orange;stroke:none; }
+image.hover_theme_svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538 { stroke:orange; }</style><div class="girafe_container_std"><!--?xml version="1.0" encoding="UTF-8"?-->
+<svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" class="ggiraph-svg" role="img" id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538" viewBox="0 0 432 432" style="width: 100%; height: 100%; margin-left: auto; margin-right: auto; max-width: 100%; max-height: 500px; min-width: 0px; min-height: 0px;">
+ <style>.hover_theme_svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538[theme-id = "caption_id"] { fill:magenta;cursor:pointer; }</style>
+ <defs id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_defs">
+  <clipPath id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_c1">
+   <rect x="0" y="0" width="432" height="432"></rect>
+  </clipPath>
+  <clipPath id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_c2">
+   <rect x="0" y="81.13" width="289.65" height="289.65"></rect>
+  </clipPath>
+ </defs>
+ <g id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_rootg" class="ggiraph-svg-rootg">
+  <g clip-path="url(#svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_c1)">
+   <rect x="0" y="0" width="432" height="432" fill="#FFFFFF" fill-opacity="1" stroke="#FFFFFF" stroke-opacity="1" stroke-width="0.75" stroke-linejoin="round" stroke-linecap="round" class="ggiraph-svg-bg"></rect>
+  </g>
+  <g clip-path="url(#svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_c2)">
+   <polygon id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_e1" points="128.36,284.67 127.30,288.44 126.24,292.22 125.18,295.99 124.13,299.77 123.07,303.54 122.01,307.32 120.95,311.09 119.89,314.86 118.83,318.64 117.77,322.41 116.72,326.19 115.66,329.96 114.60,333.74 113.54,337.51 120.34,339.20 121.16,335.37 121.99,331.53 122.82,327.70 123.65,323.87 124.48,320.04 125.31,316.21 126.14,312.38 126.96,308.55 127.79,304.71 128.62,300.88 129.45,297.05 130.28,293.22 131.11,289.39 131.94,285.56 128.36,284.67" fill="#666666" fill-opacity="1" stroke="none" title="Divers:&amp;lt;br/&amp;gt;5319 voix&amp;lt;br/&amp;gt;0.96% des voix" data-id="LDIV"></polygon>
+   <polygon id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_e2" points="191.49,265.21 194.49,267.73 197.49,270.26 200.49,272.78 203.49,275.30 206.49,277.83 209.49,280.35 212.49,282.87 215.49,285.40 218.49,287.92 221.49,290.44 224.49,292.97 227.49,295.49 230.49,298.02 233.49,300.54 236.07,297.35 238.54,294.08 240.89,290.72 243.13,287.28 245.23,283.77 247.22,280.18 249.07,276.52 250.79,272.80 252.39,269.02 253.84,265.19 255.16,261.31 256.34,257.38 257.39,253.41 258.29,249.41 254.45,248.62 250.61,247.83 246.77,247.03 242.93,246.24 239.09,245.44 235.25,244.65 231.42,243.86 227.58,243.06 223.74,242.27 219.90,241.48 216.06,240.68 212.22,239.89 208.38,239.09 204.54,238.30 203.52,242.49 202.20,246.60 200.60,250.61 198.72,254.49 196.56,258.23 194.15,261.81 191.49,265.21" fill="#666666" fill-opacity="1" stroke="none" title="Divers centre:&amp;lt;br/&amp;gt;43602 voix&amp;lt;br/&amp;gt;7.89% des voix" data-id="LDVC"></polygon>
+   <polygon id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_e3" points="165.56,168.61 166.89,164.92 168.22,161.23 169.56,157.55 170.89,153.86 172.22,150.17 173.56,146.49 174.89,142.80 176.22,139.11 177.55,135.43 178.89,131.74 180.22,128.05 181.55,124.37 182.89,120.68 184.22,117.00 180.26,115.64 176.25,114.44 172.20,113.37 168.11,112.46 164.00,111.69 159.86,111.07 155.70,110.60 155.33,114.51 154.96,118.41 154.60,122.31 154.23,126.22 153.86,130.12 153.49,134.02 153.12,137.92 152.76,141.83 152.39,145.73 152.02,149.63 151.65,153.54 151.28,157.44 150.92,161.34 150.55,165.24 155.64,165.94 160.66,167.07 165.56,168.61" fill="#A5D8F6" fill-opacity="1" stroke="none" title="Divers droite:&amp;lt;br/&amp;gt;22257 voix&amp;lt;br/&amp;gt;4.03% des voix" data-id="LDVD"></polygon>
+   <polygon id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_e4" points="124.94,168.31 123.66,164.60 122.38,160.90 121.10,157.19 119.82,153.49 118.54,149.78 117.26,146.08 115.98,142.37 114.71,138.66 113.43,134.96 112.15,131.25 110.87,127.55 109.59,123.84 108.31,120.14 107.03,116.43 105.44,116.99 106.77,120.68 108.11,124.37 109.44,128.05 110.77,131.74 112.10,135.43 113.44,139.11 114.77,142.80 116.10,146.49 117.43,150.17 118.77,153.86 120.10,157.55 121.43,161.23 122.77,164.92 124.10,168.61 124.94,168.31" fill="#FF92BE" fill-opacity="1" stroke="none" title="Divers gauche:&amp;lt;br/&amp;gt;1282 voix&amp;lt;br/&amp;gt;0.23% des voix" data-id="LDVG"></polygon>
+   <polygon id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_e5" points="144.83,164.97 144.83,161.05 144.83,157.13 144.83,153.21 144.83,149.29 144.83,145.37 144.83,141.45 144.83,137.53 144.83,133.61 144.83,129.69 144.83,125.77 144.83,121.85 144.83,117.93 144.83,114.01 144.83,110.09 139.74,110.20 139.91,114.12 140.08,118.04 140.25,121.95 140.42,125.87 140.60,129.79 140.77,133.70 140.94,137.62 141.11,141.54 141.29,145.45 141.46,149.37 141.63,153.28 141.80,157.20 141.97,161.12 142.15,165.03 144.83,164.97" fill="#BC1415" fill-opacity="1" stroke="none" title="Extrême gauche:&amp;lt;br/&amp;gt;3868 voix&amp;lt;br/&amp;gt;0.7% des voix" data-id="LEXG"></polygon>
+   <polygon id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_e6" points="142.15,165.03 141.97,161.12 141.80,157.20 141.63,153.28 141.46,149.37 141.29,145.45 141.11,141.54 140.94,137.62 140.77,133.70 140.60,129.79 140.42,125.87 140.25,121.95 140.08,118.04 139.91,114.12 139.74,110.20 135.57,110.46 131.41,110.87 127.27,111.43 123.16,112.14 119.07,112.99 115.02,113.99 111.00,115.14 107.03,116.43 108.31,120.14 109.59,123.84 110.87,127.55 112.15,131.25 113.43,134.96 114.71,138.66 115.98,142.37 117.26,146.08 118.54,149.78 119.82,153.49 121.10,157.19 122.38,160.90 123.66,164.60 124.94,168.31 129.14,167.03 133.42,166.05 137.77,165.38 142.15,165.03" fill="#BC1415" fill-opacity="1" stroke="none" title="La France insoumise:&amp;lt;br/&amp;gt;25371 voix&amp;lt;br/&amp;gt;4.59% des voix" data-id="LFI"></polygon>
+   <polygon id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_e7" points="204.54,238.30 208.38,239.09 212.22,239.89 216.06,240.68 219.90,241.48 223.74,242.27 227.58,243.06 231.42,243.86 235.25,244.65 239.09,245.44 242.93,246.24 246.77,247.03 250.61,247.83 254.45,248.62 258.29,249.41 259.19,244.50 259.89,239.56 255.99,239.10 252.10,238.64 248.21,238.18 244.31,237.72 240.42,237.26 236.53,236.80 232.64,236.33 228.74,235.87 224.85,235.41 220.96,234.95 217.06,234.49 213.17,234.03 209.28,233.57 205.38,233.11 204.54,238.30" fill="#007FCC" fill-opacity="1" stroke="none" title="Les Républicains:&amp;lt;br/&amp;gt;7586 voix&amp;lt;br/&amp;gt;1.37% des voix" data-id="LLR"></polygon>
+   <polygon id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_e8" points="150.55,165.24 150.92,161.34 151.28,157.44 151.65,153.54 152.02,149.63 152.39,145.73 152.76,141.83 153.12,137.92 153.49,134.02 153.86,130.12 154.23,126.22 154.60,122.31 154.96,118.41 155.33,114.51 155.70,110.60 150.27,110.22 144.83,110.09 144.83,114.01 144.83,117.93 144.83,121.85 144.83,125.77 144.83,129.69 144.83,133.61 144.83,137.53 144.83,141.45 144.83,145.37 144.83,149.29 144.83,153.21 144.83,157.13 144.83,161.05 144.83,164.97 150.55,165.24" fill="#00456F" fill-opacity="1" stroke="none" title="Rassemblement National:&amp;lt;br/&amp;gt;8270 voix&amp;lt;br/&amp;gt;1.5% des voix" data-id="LRN"></polygon>
+   <polygon id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_e9" points="131.94,285.56 131.11,289.39 130.28,293.22 129.45,297.05 128.62,300.88 127.79,304.71 126.96,308.55 126.14,312.38 125.31,316.21 124.48,320.04 123.65,323.87 122.82,327.70 121.99,331.53 121.16,335.37 120.34,339.20 124.19,339.96 128.06,340.60 131.96,341.10 135.86,341.47 139.78,341.71 143.71,341.81 147.63,341.78 151.56,341.62 155.47,341.33 159.37,340.90 163.26,340.34 167.12,339.65 170.96,338.83 174.77,337.88 178.55,336.80 182.28,335.59 185.98,334.26 189.62,332.80 193.22,331.23 196.76,329.53 200.24,327.71 203.65,325.77 207.00,323.72 210.28,321.56 213.48,319.29 216.60,316.91 219.64,314.42 222.60,311.84 225.46,309.15 228.23,306.37 230.91,303.50 233.49,300.54 230.49,298.02 227.49,295.49 224.49,292.97 221.49,290.44 218.49,287.92 215.49,285.40 212.49,282.87 209.49,280.35 206.49,277.83 203.49,275.30 200.49,272.78 197.49,270.26 194.49,267.73 191.49,265.21 188.72,268.28 185.76,271.16 182.60,273.82 179.27,276.27 175.79,278.49 172.16,280.47 168.40,282.19 164.54,283.66 160.59,284.86 156.56,285.79 152.48,286.45 148.37,286.83 144.24,286.93 140.11,286.75 136.00,286.29 131.94,285.56" fill="#A5D8F6" fill-opacity="1" stroke="none" title="Union du centre:&amp;lt;br/&amp;gt;95424 voix&amp;lt;br/&amp;gt;17.26% des voix" data-id="LUC"></polygon>
+   <polygon id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_e10" points="205.38,233.11 209.28,233.57 213.17,234.03 217.06,234.49 220.96,234.95 224.85,235.41 228.74,235.87 232.64,236.33 236.53,236.80 240.42,237.26 244.31,237.72 248.21,238.18 252.10,238.64 255.99,239.10 259.89,239.56 260.29,235.59 260.55,231.61 260.68,227.63 260.66,223.65 260.52,219.66 260.23,215.69 259.81,211.73 259.25,207.78 258.56,203.85 257.73,199.96 256.77,196.09 255.68,192.26 254.45,188.46 253.10,184.72 251.62,181.02 250.01,177.37 248.28,173.78 246.42,170.25 244.44,166.79 242.35,163.40 240.14,160.08 237.82,156.85 235.39,153.69 232.85,150.62 230.21,147.63 227.46,144.74 224.62,141.95 221.68,139.26 218.66,136.66 215.54,134.18 212.34,131.80 209.07,129.53 205.71,127.38 202.29,125.34 198.79,123.43 195.23,121.63 191.62,119.96 187.94,118.41 184.22,117.00 182.89,120.68 181.55,124.37 180.22,128.05 178.89,131.74 177.55,135.43 176.22,139.11 174.89,142.80 173.56,146.49 172.22,150.17 170.89,153.86 169.56,157.55 168.22,161.23 166.89,164.92 165.56,168.61 169.36,170.13 173.04,171.90 176.60,173.91 180.02,176.16 183.28,178.63 186.36,181.31 189.26,184.19 191.96,187.27 194.45,190.51 196.71,193.92 198.74,197.47 200.53,201.15 202.07,204.94 203.35,208.82 204.37,212.78 205.12,216.80 205.59,220.86 205.80,224.95 205.73,229.04 205.38,233.11" fill="#0081C3" fill-opacity="1" stroke="none" title="Union de la droite:&amp;lt;br/&amp;gt;118053 voix&amp;lt;br/&amp;gt;21.35% des voix" data-id="LUD"></polygon>
+   <polygon id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_e11" points="124.10,168.61 122.77,164.92 121.43,161.23 120.10,157.55 118.77,153.86 117.43,150.17 116.10,146.49 114.77,142.80 113.44,139.11 112.10,135.43 110.77,131.74 109.44,128.05 108.11,124.37 106.77,120.68 105.44,116.99 101.75,118.40 98.10,119.93 94.51,121.59 90.98,123.37 87.51,125.27 84.10,127.28 80.77,129.41 77.51,131.65 74.33,134.01 71.24,136.47 68.22,139.03 65.30,141.70 62.47,144.46 59.74,147.32 57.10,150.27 54.57,153.31 52.14,156.43 49.83,159.63 47.62,162.91 45.52,166.27 43.54,169.69 41.68,173.18 39.94,176.73 38.32,180.34 36.83,184.00 35.46,187.71 34.22,191.47 33.10,195.26 32.12,199.10 31.27,202.96 30.55,206.85 29.97,210.76 29.51,214.69 29.20,218.63 29.01,222.58 28.97,226.54 29.05,230.49 29.28,234.44 29.63,238.38 30.12,242.30 30.75,246.21 31.51,250.09 32.40,253.94 33.42,257.76 34.57,261.55 35.85,265.29 37.25,268.99 38.79,272.63 40.44,276.23 42.22,279.76 44.11,283.23 46.13,286.64 48.26,289.97 50.50,293.23 53.69,290.95 56.88,288.68 60.07,286.40 63.26,284.12 66.45,281.85 69.65,279.57 72.84,277.29 76.03,275.02 79.22,272.74 82.41,270.47 85.60,268.19 88.80,265.91 91.99,263.64 95.18,261.36 92.96,258.02 90.96,254.54 89.20,250.93 87.67,247.22 86.40,243.41 85.38,239.53 84.61,235.59 84.11,231.61 83.87,227.60 83.89,223.58 84.18,219.58 84.73,215.60 85.54,211.67 86.61,207.80 87.93,204.01 89.50,200.32 91.30,196.73 93.34,193.28 95.60,189.96 98.08,186.80 100.76,183.81 103.62,181.00 106.67,178.39 109.88,175.98 113.25,173.79 116.75,171.82 120.37,170.09 124.10,168.61" fill="#EE174B" fill-opacity="1" stroke="none" title="Union de la gauche:&amp;lt;br/&amp;gt;162219 voix&amp;lt;br/&amp;gt;29.34% des voix" data-id="LUG"></polygon>
+   <polygon id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_e12" points="95.18,261.36 91.99,263.64 88.80,265.91 85.60,268.19 82.41,270.47 79.22,272.74 76.03,275.02 72.84,277.29 69.65,279.57 66.45,281.85 63.26,284.12 60.07,286.40 56.88,288.68 53.69,290.95 50.50,293.23 52.83,296.39 55.27,299.46 57.81,302.45 60.45,305.36 63.19,308.17 66.03,310.89 68.95,313.51 71.96,316.03 75.06,318.45 78.23,320.76 81.48,322.96 84.80,325.06 88.20,327.03 91.65,328.89 95.17,330.64 98.75,332.26 102.38,333.76 106.06,335.14 109.78,336.39 113.54,337.51 114.60,333.74 115.66,329.96 116.72,326.19 117.77,322.41 118.83,318.64 119.89,314.86 120.95,311.09 122.01,307.32 123.07,303.54 124.13,299.77 125.18,295.99 126.24,292.22 127.30,288.44 128.36,284.67 124.42,283.42 120.58,281.90 116.84,280.13 113.24,278.11 109.78,275.85 106.48,273.36 103.35,270.66 100.42,267.75 97.69,264.64 95.18,261.36" fill="#7CA700" fill-opacity="1" stroke="none" title="Europe Ecologie-Les Verts:&amp;lt;br/&amp;gt;59649 voix&amp;lt;br/&amp;gt;10.79% des voix" data-id="LVEC"></polygon>
+   <polygon id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_e13" points="144.83,225.95 144.83,222.03 144.83,218.11 144.83,214.19 144.83,210.27 144.83,206.35 144.83,202.43 144.83,198.51 144.83,194.59 144.83,190.67 144.83,186.75 144.83,182.83 144.83,178.91 144.83,174.99 144.83,171.07 140.87,171.22 136.93,171.64 133.03,172.36 129.19,173.35 125.44,174.61 121.78,176.14 118.25,177.94 114.85,179.98 111.61,182.26 108.55,184.77 105.67,187.50 103.00,190.42 100.54,193.54 98.32,196.82 96.34,200.25 94.61,203.81 93.14,207.49 91.95,211.27 91.02,215.13 90.38,219.04 90.03,222.98 89.95,226.94 90.17,230.90 90.67,234.83 91.45,238.72 92.51,242.54 93.84,246.27 95.44,249.89 97.30,253.39 99.40,256.75 101.74,259.95 104.31,262.97 107.08,265.80 110.06,268.42 113.21,270.82 116.53,272.98 120.00,274.90 123.60,276.56 127.30,277.96 131.10,279.09 134.97,279.94 138.89,280.51 142.85,280.80 146.81,280.80 150.76,280.51 154.68,279.94 158.55,279.09 162.35,277.96 166.06,276.56 169.65,274.90 173.12,272.98 176.44,270.82 179.60,268.42 182.57,265.80 185.35,262.97 187.91,259.95 190.25,256.75 192.36,253.39 194.21,249.89 195.81,246.27 197.14,242.54 198.20,238.72 198.99,234.83 199.48,230.90 199.70,226.94 199.63,222.98 199.27,219.04 198.63,215.13 197.71,211.27 196.51,207.49 195.04,203.81 193.31,200.25 191.33,196.82 189.11,193.54 186.66,190.42 183.98,187.50 181.11,184.77 178.04,182.26 174.80,179.98 171.40,177.94 167.87,176.14 164.22,174.61 160.46,173.35 156.62,172.36 152.73,171.64 148.79,171.22 144.83,171.07 144.83,174.99 144.83,178.91 144.83,182.83 144.83,186.75 144.83,190.67 144.83,194.59 144.83,198.51 144.83,202.43 144.83,206.35 144.83,210.27 144.83,214.19 144.83,218.11 144.83,222.03 144.83,225.95 144.83,225.95" fill="#7F7F7F" fill-opacity="1" stroke="none" title="NA:&amp;lt;br/&amp;gt;552900 voix&amp;lt;br/&amp;gt;100% des voix" data-id="NA"></polygon>
+  </g>
+  <g clip-path="url(#svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_c1)">
+   <text x="295.32" y="123.54" font-size="8.25pt" font-family="DejaVu Sans">nuance</text>
+   <rect id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_e14" x="296.03" y="130.88" width="15.86" height="15.86" fill="#BC1415" fill-opacity="1" stroke="none" key-id="LEXG"></rect>
+   <rect id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_e15" x="296.03" y="148.16" width="15.86" height="15.86" fill="#BC1415" fill-opacity="1" stroke="none" key-id="LFI"></rect>
+   <rect id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_e16" x="296.03" y="165.44" width="15.86" height="15.86" fill="#FF92BE" fill-opacity="1" stroke="none" key-id="LDVG"></rect>
+   <rect id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_e17" x="296.03" y="182.72" width="15.86" height="15.86" fill="#EE174B" fill-opacity="1" stroke="none" key-id="LUG"></rect>
+   <rect id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_e18" x="296.03" y="200" width="15.86" height="15.86" fill="#7CA700" fill-opacity="1" stroke="none" key-id="LVEC"></rect>
+   <rect id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_e19" x="296.03" y="217.28" width="15.86" height="15.86" fill="#666666" fill-opacity="1" stroke="none" key-id="LDIV"></rect>
+   <rect id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_e20" x="296.03" y="234.56" width="15.86" height="15.86" fill="#A5D8F6" fill-opacity="1" stroke="none" key-id="LUC"></rect>
+   <rect id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_e21" x="296.03" y="251.84" width="15.86" height="15.86" fill="#666666" fill-opacity="1" stroke="none" key-id="LDVC"></rect>
+   <rect id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_e22" x="296.03" y="269.12" width="15.86" height="15.86" fill="#007FCC" fill-opacity="1" stroke="none" key-id="LLR"></rect>
+   <rect id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_e23" x="296.03" y="286.4" width="15.86" height="15.86" fill="#0081C3" fill-opacity="1" stroke="none" key-id="LUD"></rect>
+   <rect id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_e24" x="296.03" y="303.68" width="15.86" height="15.86" fill="#A5D8F6" fill-opacity="1" stroke="none" key-id="LDVD"></rect>
+   <rect id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_e25" x="296.03" y="320.96" width="15.86" height="15.86" fill="#00456F" fill-opacity="1" stroke="none" key-id="LRN"></rect>
+   <text x="338.94" y="142.02" font-size="6.6pt" font-family="DejaVu Sans">Extrême gauche</text>
+   <text x="330.18" y="159.3" font-size="6.6pt" font-family="DejaVu Sans">La France insoumise</text>
+   <text x="343.43" y="176.58" font-size="6.6pt" font-family="DejaVu Sans">Divers gauche</text>
+   <text x="332.53" y="193.86" font-size="6.6pt" font-family="DejaVu Sans">Union de la gauche</text>
+   <text x="318.08" y="211.14" font-size="6.6pt" font-family="DejaVu Sans">Europe Ecologie-Les Verts</text>
+   <text x="361.02" y="228.42" font-size="6.6pt" font-family="DejaVu Sans">Divers</text>
+   <text x="339.9" y="245.7" font-size="6.6pt" font-family="DejaVu Sans">Union du centre</text>
+   <text x="345.57" y="262.98" font-size="6.6pt" font-family="DejaVu Sans">Divers centre</text>
+   <text x="338.46" y="280.26" font-size="6.6pt" font-family="DejaVu Sans">Les Républicains</text>
+   <text x="335.87" y="297.54" font-size="6.6pt" font-family="DejaVu Sans">Union de la droite</text>
+   <text x="346.77" y="314.82" font-size="6.6pt" font-family="DejaVu Sans">Divers droite</text>
+   <text x="319.85" y="332.1" font-size="6.6pt" font-family="DejaVu Sans">Rassemblement National</text>
+   <text x="-0" y="78.84" font-size="8.25pt" font-family="DejaVu Sans">Municipales Paris 2020</text>
+   <text x="-0" y="62.59" font-size="9.9pt" font-family="DejaVu Sans">Scores par nuance</text>
+   <text id="svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538_e26" x="213.22" y="382.68" font-size="6.6pt" font-family="DejaVu Sans" title="https://parisdata.opendatasoft.com/explore" theme-id="caption_id" onclick='window.open("https://parisdata.opendatasoft.com/explore")'>source: parisdata</text>
+  </g>
+ </g>
+</svg></div></div>
+      </div>
+      <div class="col-sm-5">
+        <div class="girafe html-widget html-widget-output shiny-report-size html-fill-item-overflow-hidden html-fill-item shiny-bound-output" id="map" style="width: 100%; height: 500px; visibility: hidden;" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+
+
+<div id="ss-connect-dialog" style="display: none;"></div><div id="ss-overlay" class="ss-gray-out" style="display: none;"></div><div class="tooltip_svg_e73d75e7_5a3e_4303_b7bd_8d14594f8538" style="position: absolute; opacity: 0;"></div></body></html>

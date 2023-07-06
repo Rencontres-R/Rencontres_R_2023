@@ -1,0 +1,213 @@
+/*-- scss:defaults --*/
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap');
+
+
+@font-face {
+  font-family: 'Fenton';
+  src: url(Fenton-Regular.otf);
+}
+
+;
+
+
+// fonts
+$presentation-heading-font: 'Yanone Kaffeesatz';
+
+// colors
+$black: #000000;
+$white: #fff;
+$orange: #f05522;
+$blue: #17b7d6;
+$blue-light: #17b7d626;
+$grey-light: #f3f3f388;
+
+$body-bg: $white !default;
+$body-color: $black !default;
+
+$link-color: $orange !default;
+
+$code-bg: $blue;
+$code-block-bg: $grey-light;
+$code-block-border-color: #444444;
+$light-bg-code-color: red;
+
+// Sizes
+$presentation-font-size-root: 28px;
+$presentation-h1-font-size: 3em;
+$presentation-h2-font-size: 2.5em;
+$presentation-h3-font-size: 1.75em;
+
+$code-block-font-size: 13px;
+
+/*-- scss:rules --*/
+
+h1,
+h2 {
+  color: $orange !important;
+}
+
+.reveal h1 {
+  text-transform: uppercase !important;
+  font-weight: 600;
+}
+
+#title-slide {
+  text-transform: uppercase !important;
+  font-weight: 600;
+  font-family: 'Yanone Kaffeesatz';
+  /*background-image: url(font.png);*/
+
+  .subtitle, .institute {
+    color: #c1c1c1;
+    font-size: 1.8em;
+  }
+  
+  .quarto-title-authors {
+    font-size: 1em;
+  }
+  
+    .quarto-title-affiliation {
+    color: white;
+    font-size: 0.8em;
+  }
+  
+  .small{
+    font-size: 2em;
+  }
+}
+
+.my_title{
+  font-size: 1.6em;
+    margin: var(--r-heading-margin);
+    color: var(--r-heading-color);
+    font-family: var(--r-heading-font);
+    font-weight: var(--r-heading-font-weight);
+    line-height: var(--r-heading-line-height);
+    letter-spacing: var(--r-heading-letter-spacing);
+    text-transform: var(--r-heading-text-transform);
+    text-shadow: var(--r-heading-text-shadow);
+    word-wrap: break-word;
+}
+
+
+.quarto-title-author-name,.date {
+  color: white;
+}
+
+h2,
+h3 {
+  font-family: 'Yanone Kaffeesatz', sans-serif !important;
+  /* text-transform: uppercase !important; */
+  font-weight: 600 !important;
+}
+
+.reveal small{
+  vertical-align: middle;
+}
+
+.left-items {
+  text-align: left;
+}
+
+.center-items {
+  text-align: center;
+}
+
+.right-items {
+  text-align: right;
+}
+
+.middle-items {
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.footer strong {
+  color: $blue;
+}
+
+// code
+
+.reveal code {
+  padding: 2px 4px;
+  border-radius: 5px;
+  color: $black;
+  font-size: 14px;
+  background-color: #f3f3f388;
+}
+
+.small-code pre {
+  font-size: 10px;
+}
+
+.reveal pre code {
+  background-color: $grey-light;
+  padding: 6px 9px;
+  line-height: 1.5em;
+}
+
+.reveal div.sourceCode {
+  border: 1px solid #c8c8c8;
+}
+
+code span.fu {
+  color: lighten($orange, 15%);
+}
+
+.reveal div.sourceCode pre code.has-line-highlights>span:not(.highlight-line) {
+  opacity: 0.25 !important;
+}
+
+// Componants
+
+// call-out
+.callout-caption {
+  align-items: inherit;
+}
+
+.reveal .callout.callout-captioned .callout-icon::before {
+  margin-top: 0.5rem;
+}
+
+.reveal .callout.callout-style-default .callout-icon::before {
+  height: 1rem;
+  width: 1rem;
+  background-size: 1rem 1rem;
+}
+
+// blockquote
+
+.reveal blockquote {
+  padding: .25rem 1.95rem;
+}
+
+.reveal blockquote p {
+  font-style: italic;
+  font-size: $presentation-font-size-root;
+}
+
+// dashed-box
+
+@mixin dashed-box($color: $orange) {
+  border: dashed $color;
+  text-align: center;
+}
+
+.dashed-box-orange {
+  @include dashed-box;
+}
+
+.dashed-box-orange-flex {
+  @include dashed-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashed-box-blue {
+  @include dashed-box($color: $blue);
+}
+
