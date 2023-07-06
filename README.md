@@ -17,7 +17,7 @@ Twitter : [@rencontres_R](https://twitter.com/rencontres_R)
 LinkedIn groupe : [Rencontres R groupe](https://www.linkedin.com/groups/14126026/)  
 
 Les Rencontres R 2023 c'est :  
--> 250 Participants
+-> 250 Participants  
 -> 5 Demi-journées  
 -> 5 Keynotes  
 -> 3 Tutoriels  
