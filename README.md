@@ -45,9 +45,9 @@ https://rr2023.sciencesconf.org/page/conferenciers
 
 https://rr2023.sciencesconf.org/page/tutoriels
 
-* [De R markdown à Quarto sans effort aller plus loin avec ses publications - Christophe Dervieux, Posit](https://cderv.quarto.pub/tuto-quarto-rr2023/)
-* [Créer un pipeline de machine learning complet avec {tidymodels}](https://github.com/abichat/rr23-tuto-tidymodels)
-* [Analyse spatiale et cartographie avec R](https://github.com/antuki/RR2023_tuto_statspatiale)
+* [De R markdown à Quarto sans effort aller plus loin avec ses publications](https://cderv.quarto.pub/tuto-quarto-rr2023/) - Christophe Dervieux (Posit)
+* [Créer un pipeline de machine learning complet avec {tidymodels}](https://github.com/abichat/rr23-tuto-tidymodels) - Julie Aubert (MIA Paris Saclay), Antoine Bichat (Servier)
+* [Analyse spatiale et cartographie avec R](https://github.com/antuki/RR2023_tuto_statspatiale) - Kim Antunez (INSEE), Etienne Côme (Université Gustave Eiffel)
 
 ### Posters
 
