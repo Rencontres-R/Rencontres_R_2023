@@ -37,7 +37,7 @@ https://rr2023.sciencesconf.org/program
 
 https://rr2023.sciencesconf.org/page/conferenciers
 
-* [Tips pour combattre le syndrome de l'imposteur](https://www.google.com/url?q=https://bit.ly/imposteur-avignon&sa=D&source=editors&ust=1687880572930550&usg=AOvVaw2BpH2o17LbvNuv_fLsKuq_) - Aurélie Vache, OVHcloud
+* [Tips pour combattre le syndrome de l'imposteur](https://www.google.com/url?q=https://bit.ly/imposteur-avignon&sa=D&source=editors&ust=1687880572930550&usg=AOvVaw2BpH2o17LbvNuv_fLsKuq_) - Aurélie Vache, OVHcloud [![Youtube](https://www.youtube.com/s/desktop/cea106d7/img/favicon.ico)](https://youtu.be/sPiu8us444w)  
 * [Data science without the data](https://statsrhian.github.io/talks/2023/2023-06-22-data-science-without-the-data/slides.html#/title-slide) - Rhian Davies, Jumping Rivers
 * [R dans l'univers de la Dataviz](https://github.com/holtzy/Talk/blob/master/2023/R_in_Dataviz_universe.pdf) - Yan Holtz, Datadog
 * [L'écosystème spatial de R](https://rcarto.github.io/RencontresR_2023/#/title-slide) - Timothée Giraud, UAR RIATE
